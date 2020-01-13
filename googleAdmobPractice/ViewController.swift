@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 広告出すのに必要なもの
-        bannerView.adUnitID = ""
+        bannerView.adUnitID = "ca-app-pub-3940256099942544~1458002511"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
