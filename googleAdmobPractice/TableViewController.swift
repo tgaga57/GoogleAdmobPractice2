@@ -22,12 +22,13 @@ class TableViewController: UITableViewController,GADBannerViewDelegate,GADInters
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // バックグラウンドイメージ
+        let image = UIImage(named: "backGrondImage")
+        backImageView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+        backImageView.image = image
+        tableView.backgroundView = backImageView
+        
+        
     }
 
     // MARK: - Table view data source
