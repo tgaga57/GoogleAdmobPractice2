@@ -62,7 +62,7 @@ class TableViewController: UITableViewController,GADBannerViewDelegate,GADInters
             let cell = tableView.dequeueReusableCell(withIdentifier: "BannerCell", for: indexPath)
             let bannerView = cell.viewWithTag(1) as! GADBannerView
             // googleaddmobから持ってきたid
-            bannerView.adUnitID = "ca-app-pub-1769933283836427/5172907579"
+            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
             bannerView.rootViewController = self
             bannerView.load(GADRequest())
             
@@ -101,7 +101,7 @@ class TableViewController: UITableViewController,GADBannerViewDelegate,GADInters
     
     func createAndLoadInterstitial() -> GADInterstitial {
         
-        var interstitial = GADInterstitial(adUnitID: "ca-app-pub-1769933283836427/1728486585")
+        var interstitial = GADInterstitial(adUnitID:"ca-app-pub-3940256099942544/4411468910")
         interstitial.delegate = self
         interstitial.load(GADRequest())
         
